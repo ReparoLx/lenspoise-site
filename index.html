@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>椿野集文化传媒（四川）有限责任公司 — 川西旅拍 · 内容创作 · 影像科技</title>
+<meta name="description" content="椿野集文化传媒（四川）有限责任公司（Chunyeji Cultural Media (Sichuan) Co., Ltd.）专注川西旅行摄影、精品小团旅拍、短视频内容制作与摄影辅助软件研发。">
+<style>
+  :root{
+    --ink:#1c2430;
+    --ink-soft:#4a5568;
+    --paper:#faf8f4;
+    --accent:#3d6b5c;
+    --accent-warm:#c08a4d;
+    --line:#e3ddd2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Songti SC","Noto Serif SC","STSong",Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.9}
+  .sans{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* header */
+  header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(250,248,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-size:20px;letter-spacing:.35em;font-weight:700}
+  .logo span{font-size:11px;letter-spacing:.18em;color:var(--ink-soft);display:block;font-weight:400}
+  nav.menu{display:flex;gap:28px;font-size:14px;letter-spacing:.1em}
+  nav.menu a:hover{color:var(--accent)}
+  @media(max-width:640px){nav.menu{display:none}}
+
+  /* hero */
+  .hero{position:relative;height:86vh;min-height:520px;display:flex;align-items:flex-end;color:#fff;background:url('images/hero.jpg') center 30%/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,28,38,.15) 40%,rgba(20,28,38,.72))}
+  .hero .wrap{position:relative;z-index:1;padding-bottom:72px}
+  .hero h1{font-size:clamp(30px,5vw,52px);letter-spacing:.22em;font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+  .hero p{margin-top:14px;font-size:clamp(14px,1.8vw,18px);letter-spacing:.14em;opacity:.92}
+
+  /* sections */
+  section{padding:88px 0}
+  .sec-tag{font-size:12px;letter-spacing:.4em;color:var(--accent-warm);text-transform:uppercase}
+  h2{font-size:clamp(24px,3.2vw,34px);letter-spacing:.16em;margin:10px 0 34px;font-weight:700}
+  .lead{max-width:760px;color:var(--ink-soft);font-size:16.5px}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  @media(max-width:760px){.about-grid{grid-template-columns:1fr}}
+  .about-grid img{width:100%;border-radius:4px;box-shadow:12px 12px 0 var(--line)}
+  .facts{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+  .facts div{border-top:2px solid var(--accent);padding-top:12px}
+  .facts b{font-size:22px;display:block}
+  .facts i{font-style:normal;font-size:13px;color:var(--ink-soft)}
+
+  /* services */
+  .services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  @media(max-width:760px){.svc-grid{grid-template-columns:1fr}}
+  .svc{border:1px solid var(--line);border-radius:4px;padding:32px 28px;background:var(--paper);transition:transform .25s}
+  .svc:hover{transform:translateY(-4px)}
+  .svc .no{font-size:13px;color:var(--accent-warm);letter-spacing:.3em}
+  .svc h3{font-size:20px;letter-spacing:.12em;margin:10px 0 12px}
+  .svc p{font-size:14.5px;color:var(--ink-soft)}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:640px){.gal{grid-template-columns:1fr}}
+  .gal figure{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px 12px;color:#fff;font-size:13px;letter-spacing:.14em;background:linear-gradient(transparent,rgba(20,28,38,.75))}
+
+  /* contact */
+  .contact{background:var(--ink);color:#e9e5dd}
+  .contact .sec-tag{color:var(--accent-warm)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  @media(max-width:640px){.contact-grid{grid-template-columns:1fr}}
+  .contact dt{font-size:12.5px;letter-spacing:.3em;color:#9aa3af;margin-bottom:6px}
+  .contact dd{font-size:17px;margin-bottom:26px}
+  .contact a:hover{color:var(--accent-warm)}
+
+  footer{background:#141b25;color:#8b93a0;font-size:12.5px;text-align:center;padding:26px 16px;line-height:2}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">椿野集<span class="sans">LENSPOISE · CHUNYEJI</span></div>
+    <nav class="menu sans">
+      <a href="#about">关于我们</a>
+      <a href="#services">业务范围</a>
+      <a href="#works">影像川西</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>把川西的风光，拍进你的故事里</h1>
+    <p>椿野集 · 旅行摄影 / 内容创作 / 影像科技 —— 扎根四川，面向雪山</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="sec-tag sans">About Us</div>
+      <h2>关于椿野集</h2>
+      <p class="lead">椿野集文化传媒（四川）有限责任公司是一家扎根四川的文化传媒企业，专注于川西高原旅行摄影与数字内容创作。我们以四姑娘山、塔公草原、稻城亚丁等川西经典目的地为创作现场，为旅行者提供专业旅拍服务，为文旅品牌提供短视频与影像内容解决方案。</p>
+      <p class="lead" style="margin-top:16px">在深耕摄影服务的同时，我们将多年现场拍摄经验沉淀为数字产品，自主研发摄影辅助软件，探索 AI 技术与旅行影像结合的更多可能。</p>
+      <div class="facts sans">
+        <div><b>川西</b><i>核心创作区域</i></div>
+        <div><b>4 大业务</b><i>旅拍 · 内容 · 代运营 · 软件</i></div>
+        <div><b>全流程</b><i>策划 — 拍摄 — 后期 — 交付</i></div>
+      </div>
+    </div>
+    <img src="images/tour.jpg" alt="椿野集川西旅拍——雪山前的旅行者">
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="sec-tag sans">Services</div>
+    <h2>业务范围</h2>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="no sans">01</div>
+        <h3>川西旅拍 · 精品小团</h3>
+        <p>四姑娘山、塔公草原、莫斯卡、稻城亚丁等线路的精品小团旅行摄影：专业摄影师随行，含路线规划、服装造型建议、现场姿态指导与精修交付，一次旅行带回一套完整的个人影像。</p>
+      </div>
+      <div class="svc">
+        <div class="no sans">02</div>
+        <h3>商业摄影与影像制作</h3>
+        <p>面向文旅品牌、民宿酒店与本地商户的商业拍摄服务：品牌宣传片、产品与空间摄影、活动纪实，从创意脚本到成片交付的全流程执行。</p>
+      </div>
+      <div class="svc">
+        <div class="no sans">03</div>
+        <h3>短视频内容策划与代运营</h3>
+        <p>基于自研内容工作流方法论，为客户提供抖音、小红书等平台的账号定位、选题策划、脚本分镜、拍摄剪辑与数据复盘的一体化内容服务。</p>
+      </div>
+      <div class="svc">
+        <div class="no sans">04</div>
+        <h3>摄影辅助软件研发</h3>
+        <p>将专业摄影经验产品化：自主研发姿态指导、构图辅助与 AI 内容创作工具，服务摄影师与旅行创作者，让普通人也能拍出专业级旅行影像。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="sec-tag sans">Portfolio</div>
+    <h2>影像川西</h2>
+    <p class="lead" style="margin-bottom:34px">我们的镜头常年行走在川西高原——雪山、云海、草甸与藏地人文，是椿野集最熟悉的创作语言。</p>
+    <div class="gal">
+      <figure><img src="images/hero.jpg" alt="四姑娘山幺妹峰"><figcaption class="sans">四姑娘山 · 幺妹峰</figcaption></figure>
+      <figure><img src="images/cloud.jpg" alt="高原云海草甸"><figcaption class="sans">高原云海 · 徒步线路</figcaption></figure>
+      <figure><img src="images/peak2.jpg" alt="川西雪山"><figcaption class="sans">雪山季 · 蓝天视角</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-tag sans">Contact</div>
+    <h2 style="color:#fff">联系我们</h2>
+    <div class="contact-grid">
+      <dl>
+        <dt class="sans">公司名称</dt>
+        <dd>椿野集文化传媒（四川）有限责任公司<br><span class="sans" style="font-size:13.5px;color:#9aa3af">Chunyeji Cultural Media (Sichuan) Co., Ltd.</span></dd>
+        <dt class="sans">商务合作邮箱</dt>
+        <dd><a href="mailto:contact@lenspoise.com">contact@lenspoise.com</a></dd>
+      </dl>
+      <dl>
+        <dt class="sans">公司所在地</dt>
+        <dd>中国 · 四川省成都市</dd>
+        <dt class="sans">官方网站</dt>
+        <dd><a href="https://www.lenspoise.com">www.lenspoise.com</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="sans">
+  © 2026 椿野集文化传媒（四川）有限责任公司 Chunyeji Cultural Media (Sichuan) Co., Ltd. 保留所有权利<br>
+  川西旅拍 · 内容创作 · 影像科技
+</footer>
+
+</body>
+</html>
